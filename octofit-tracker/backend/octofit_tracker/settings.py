@@ -124,3 +124,14 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # CORS settings
 CORS_ALLOW_ALL_ORIGINS = True
+
+# Django REST Framework settings
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ],
+}
