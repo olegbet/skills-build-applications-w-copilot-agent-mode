@@ -1,6 +1,7 @@
 {
     "version": "0.2.0",
     "configurations": [
+        
         {
             "name": "Run Django Server",
             "type": "python",
@@ -14,6 +15,18 @@
             "justMyCode": true,
             "python": "${workspaceFolder}/octofit-tracker/backend/venv/bin/python3",
             "cwd": "${workspaceFolder}/octofit-tracker/backend"
+        },
+        {
+            "name": "Run React Frontend",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/octofit-tracker/frontend",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "start"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
         }
     ]
 }
